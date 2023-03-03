@@ -6,7 +6,7 @@
  * 每个写在这里的 shortcuts 都会运行 {@link Event.preventDefault}.
  * @type {Record<KeyboardKey, OnKeyDown>}
  */
-
+window.pakeExe=true
 const metaKeyShortcuts = {
   ArrowUp: () => scrollTo(0, 0),
   ArrowDown: () => scrollTo(0, document.body.scrollHeight),
@@ -308,8 +308,7 @@ window.addEventListener("DOMContentLoaded", (_event) => {
   domEl.addEventListener("dblclick", () => {
     window.ipc.postMessage("fullscreen");
   });
-  alert(1)
-window.pakeExe=true
+
   document.addEventListener("keyup", function (event) {
     const preventDefault = (f) => {
       event.preventDefault();
