@@ -308,6 +308,7 @@ window.addEventListener("DOMContentLoaded", (_event) => {
   domEl.addEventListener("dblclick", () => {
     window.ipc.postMessage("fullscreen");
   });
+  alert(1)
 window.pakeExe=true
   document.addEventListener("keyup", function (event) {
     const preventDefault = (f) => {
